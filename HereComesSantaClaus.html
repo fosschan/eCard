@@ -514,7 +514,7 @@ function init() {
 	
 /**************bell part***************/
 	
-document.onkeypress = function(e){	
+document.onkeypress = function(e){
 	var mykey = e.which;
 		
 else if(mykey==49){//1
@@ -524,8 +524,7 @@ else if(mykey==49){//1
 	    document.onkeyup = function(){
 		image.setAttribute('style','-webkit-transform:scale(1);' );}
 	    document.getElementById("sound-one").play();
-	    document.getElementById("sound-one").volume=0.5;
-break;}
+	    document.getElementById("sound-one").volume=0.5;}
 	
 
 if(mykey==50){//2
@@ -546,6 +545,7 @@ else if(mykey==51){//3
 			image.setAttribute('style','-webkit-transform:scale(1);' );}
 	    document.getElementById("sound-three").play();
 	    document.getElementById("sound-three").volume=0.5;}
+	
 else if(mykey==52){//4
 		var image = document.getElementById("bell4"); 
 		document.onkeydown = function(){
@@ -562,8 +562,8 @@ else if(mykey==53){//5
 		document.onkeyup = function(){
 			image.setAttribute('style','-webkit-transform:scale(1);' );}
 	    document.getElementById("sound-five").play();
-	    document.getElementById("sound-four").volume=0.5;
-		}
+	    document.getElementById("sound-five").volume=0.5;}
+	
 else if(mykey==54){//6
         var image = document.getElementById("bell6"); 
 		document.onkeydown = function(){
@@ -571,8 +571,7 @@ else if(mykey==54){//6
 		document.onkeyup = function(){
 			image.setAttribute('style','-webkit-transform:scale(1);' );}
 	    document.getElementById("sound-six").play();
-	    document.getElementById("sound-six").volume=0.5;
-		}
+	    document.getElementById("sound-six").volume=0.5;}
 }
 	
 /**************button_up_down part***************/		
