@@ -146,7 +146,7 @@ p {
 	height:182px;
 	right:65vw;
 	top:120px;
-	opacity:0;
+	opacity:1;
 	z-index:80;
 	animation: bell_2_anime_59 2s steps(59) infinite;
 }
@@ -158,7 +158,7 @@ p {
 	height:208px;
 	left:60vw;
 	top:430px;
-	opacity:0;
+	opacity:1;
 	z-index:80;
 	animation: bell_7_anime_59 2s steps(59) infinite;
 }
@@ -170,7 +170,7 @@ p {
 	height:208px;
 	right:76vw;
 	top:270px;
-	opacity:0;
+	opacity:1;
 	z-index:80;
 	animation: bell_3_anime_42 2s steps(42) infinite;
 }
@@ -182,7 +182,7 @@ p {
 	height:182px;
 	right:60vw;
 	top:440px;
-	opacity:0;
+	opacity:1;
 	z-index:80;
 	animation: bell_4_ainime_36 2s steps(36) infinite;
 }
@@ -194,7 +194,7 @@ p {
 	height:208px;
 	left:68vw;
 	top:100px;
-	opacity:0;
+	opacity:1;
 	z-index:80;
 	animation: bell_5_anime_1_48 2s steps(48)  infinite;
 }
@@ -205,7 +205,7 @@ p {
 	height:182px;
 	left:75vw;
 	top:290px;
-	opacity:0;
+	opacity:1;
 	z-index:80;
 	animation: bell_6_anime_2_69 2s steps(69) infinite;
 }
@@ -412,7 +412,7 @@ p {
 	margin-left:-300px;
 	margin-top:-50px;
 	left:50%;
-	z-index:120;
+	z-index:85;
 }
 #cursor{
 	background: url(sources/cursor.png);
@@ -516,56 +516,56 @@ function init() {
 	document.onkeypress = function(e){	
 	var mykey = e.which;
 		
-else if(mykey==49){//1
+if(mykey==49){//1
 		var image = document.getElementById("bell1"); 
 		document.onkeydown = function(){
-		image.setAttribute('style','-webkit-transform:scale(1.25);' );}
+		image.setAttribute('style','-webkit-transform:scale(0.5);' );}
 	    document.onkeyup = function(){
-		image.setAttribute('style','-webkit-transform:scale(1);' );}
+		image.setAttribute('style','-webkit-transform:scale(0);' );}
 	    document.getElementById("sound-one").play();
 	    document.getElementById("sound-one").volume=0.5;}
 
-else if(mykey==50){//2
+if(mykey==50){//2
         var image = document.getElementById("bell2"); 
 		document.onkeydown = function(){
-		image.setAttribute('style','-webkit-transform:scale(1.25);' );}
+		image.setAttribute('style','-webkit-transform:scale(0.5);' );}
 	    document.onkeyup = function(){
-		image.setAttribute('style','-webkit-transform:scale(1);' );}
+		image.setAttribute('style','-webkit-transform:scale(0);' );}
 	    document.getElementById("sound-two").play();
         document.getElementById("sound-two").volume=0.5;
 		}
 		
-else if(mykey==51){//3
+if(mykey==51){//3
 		var image = document.getElementById("bell3"); 
 		document.onkeydown = function(){
-		image.setAttribute('style','-webkit-transform:scale(1.25);' );}
+		image.setAttribute('style','-webkit-transform:scale(0.5);' );}
 	    document.onkeyup = function(){
-		image.setAttribute('style','-webkit-transform:scale(1);' );}
+		image.setAttribute('style','-webkit-transform:scale(0);' );}
 	    document.getElementById("sound-three").play();
 	    document.getElementById("sound-three").volume=0.5;}
-else if(mykey==52){//4
+if(mykey==52){//4
 		var image = document.getElementById("bell4"); 
 		document.onkeydown = function(){
-		image.setAttribute('style','-webkit-transform:scale(1.25);' );}
+		image.setAttribute('style','-webkit-transform:scale(0.5);' );}
 	    document.onkeyup = function(){
-		image.setAttribute('style','-webkit-transform:scale(1);' );}
+		image.setAttribute('style','-webkit-transform:scale(0);' );}
 	    document.getElementById("sound-four").play();
 	    document.getElementById("sound-four").volume=0.5;}
-else if(mykey==53){//5
+if(mykey==53){//5
         var image = document.getElementById("bell5"); 
 		document.onkeydown = function(){
-		image.setAttribute('style','-webkit-transform:scale(1.25);' );}
+		image.setAttribute('style','-webkit-transform:scale(1.5);' );}
 	    document.onkeyup = function(){
 		image.setAttribute('style','-webkit-transform:scale(1);' );}
 	    document.getElementById("sound-five").play();
 	    document.getElementById("sound-four").volume=0.5;
 		}
-else if(mykey==54){//6
+if(mykey==54){//6
         var image = document.getElementById("bell6"); 
 		document.onkeydown = function(){
-		image.setAttribute('style','-webkit-transform:scale(1.5);' );}
+		image.setAttribute('style','-webkit-transform:scale(0.5);' );}
 	    document.onkeyup = function(){
-		image.setAttribute('style','-webkit-transform:scale(1);' );}
+		image.setAttribute('style','-webkit-transform:scale(0);' );}
 	    document.getElementById("sound-six").play();
 	    document.getElementById("sound-six").volume=0.5;
 		}
@@ -784,9 +784,9 @@ else if(mykey==54){//6
 		{progress:'100%', top:'800px', opacity:0}]);
 	
 	jarallax.addAnimation('#bell1', [
-	    {progress:'0%', top:'-420px', opacity:0}, 
-		{progress:'25%', top:'-420px', opacity:0}, 
-		{progress:'30%', top:'120px',opacity:100}, 
+	    {progress:'0%', opacity:0}, 
+		{progress:'20%', top:'-420px', opacity:0}, 
+		{progress:'25%', top:'120px',opacity:100}, 
 		{progress:'50%', top:'120px',opacity:100},
 		{progress:'56%', top:'-420px',opacity:0},  
 		{progress:'100%', top:'-420px',opacity:0}]);
