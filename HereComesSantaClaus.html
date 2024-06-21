@@ -514,12 +514,13 @@ function init() {
 	
 /**************bell part***************/
 
-document.onkeypress = function(e){
+/*document.onkeypress = function(e){*/
+document.addEventListener = function(e){
 	var mykey = e.which;
 		
 if(mykey==49){//1 
 	var image = document.getElementById("bell1"); 
-	document.onkeydown = function(){
+	document.onkeypress = function(){
 		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
 	document.getElementById("sound-one").play();
 	document.getElementById("sound-one").volume=0.5;}
