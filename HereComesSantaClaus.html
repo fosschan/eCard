@@ -520,8 +520,6 @@ if(mykey==49){//1
 		var image = document.getElementById("bell1"); 
 		document.onkeydown = function(){
 		image.setAttribute('style','-webkit-transform:scale(1.25);' );}
-	    document.onkeyup = function(){
-		image.setAttribute('style','-webkit-transform:scale(1);' );}
 	    document.getElementById("sound-one").play();
 	    document.getElementById("sound-one").volume=0.5;}
 
@@ -785,10 +783,10 @@ if(mykey==54){//6
 	
 	jarallax.addAnimation('#bell1', [
 	    {progress:'0%', top:'-420px', opacity:0}, 
-		{progress:'20%', top:'-420px', opacity:0}, 
-		{progress:'25%', top:'120px', opacity:100}, 
+		{progress:'30%', top:'-420px', opacity:0}, 
+		{progress:'35%', top:'120px', opacity:100}, 
 		{progress:'50%', top:'120px', opacity:100},
-		{progress:'56%', top:'-420px', opacity:0},  
+		{progress:'53%', top:'-420px', opacity:0},  
 		{progress:'100%', top:'-420px', opacity:0}]);
 
 	jarallax.addAnimation('#bell2', [
