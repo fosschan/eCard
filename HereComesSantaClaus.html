@@ -513,15 +513,15 @@ function init() {
 	}
 	
 /**************bell part***************/
-	document.onkeypress = function(e){	
+
+document.body.addEventListener('keydown', function (e){
+/*document.onkeypress = function(e){*/
 	var mykey = e.which;
 		
 if(mykey==49){//1 
-		var image = document.getElementById("bell1"); 
-		document.onkeydown = function(){
+	var image = document.getElementById("bell1"); 
+	document.onkeydown = function(){
 		image.setAttribute('style','-webkit-transform:scale(1.1);' );}
-	document.onkeyup = function(){
-		image.setAttribute('style','-webkit-transform:scale(1);' );}
 	document.getElementById("sound-one").play();
 	document.getElementById("sound-one").volume=0.5;}
 		
@@ -559,7 +559,7 @@ var image = document.getElementById("bell5");
 	document.onkeyup = function(){
 		image.setAttribute('style','-webkit-transform:scale(1);' );}
 	document.getElementById("sound-five").play();
-	document.getElementById("sound-four").volume=0.5;}
+	document.getElementById("sound-five").volume=0.5;}
 		
 if(mykey==54){//6
 var image = document.getElementById("bell6"); 
